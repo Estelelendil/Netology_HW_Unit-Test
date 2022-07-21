@@ -7,12 +7,12 @@ test('should checkHealh', () => {
 });
 
 const dataList = [
-  [{name:'Маг', health:90},'healthy'],
-  [{name:'мечник', health:10}, 'critical'],
-  [{name:'лучник', health:40}, 'wounded']
-]
-const hadler = test.each(dataList)
-hadler('testing function with %s object', (obj, expected)=>{
+  [{ name: 'Маг', health: 90 }, 'healthy'],
+  [{ name: 'мечник', health: 10 }, 'critical'],
+  [{ name: 'лучник', health: 40 }, 'wounded'],
+];
+const hadler = test.each(dataList);
+hadler('testing function with %s object', (obj, expected) => {
   const result = checkHealt(obj);
   expect(result).toBe(expected);
-})
+});
