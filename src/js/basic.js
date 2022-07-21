@@ -7,5 +7,3 @@ const checkHealt = function (obj) {
   } return 'wounded';
 };
 export default checkHealt;
-
-console.log(checkHealt({ name: 'Маг', health: 90 }));
