@@ -1,5 +1,3 @@
-import './css/style.css';
+import checkHealt from './js/basic';
 
-import './js/app';
-
-// TODO: write your code in app.js
+console.log(checkHealt({ name: 'Маг', health: 90 }));

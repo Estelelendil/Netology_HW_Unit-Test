@@ -1,7 +1,11 @@
-export default function sum(items) {
-  let result = 0;
-  for (const item of items) {
-    result += item;
+const checkHealt = function (obj) {
+  if (obj.health < 15) {
+    return 'critical';
   }
-  return result;
-}
+  if (obj.health > 50) {
+    return 'healthy';
+  } return 'wounded';
+};
+export default checkHealt;
+
+console.log(checkHealt({ name: 'Маг', health: 90 }));
